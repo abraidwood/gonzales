@@ -28,7 +28,7 @@ Gonzales.parsers = [
     link: 'https://github.com/marijnh/acorn/',
     defaultOn: true,
     getParser: function(exports){
-      return function(x){ console.log(exports.acorn.parse(x)); };
+      return exports.acorn.parse;
     }
   },{
     name:'Esprima',
