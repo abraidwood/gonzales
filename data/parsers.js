@@ -19,6 +19,18 @@ Gonzales.parsers = [
       };
     },
   },{
+    name:'Overture',
+    files: [
+      root+'overture/overture.js'
+    ],
+    optimized: false,
+    author: 'Alistair Braidwood',
+    link: 'https://github.com/abraidwood/overture/',
+    defaultOn: true,
+    getParser: function(exports){
+      return exports.overture.parse;
+    }
+  },{
     name:'Acorn',
     files: [
       root+'acorn/acorn.js'
